@@ -1,9 +1,9 @@
-function Index () {
+import PresenceListPage from '../src/components/presenceListPage/PresenceListPage'
+
+function HomePage () {
   return (
-    <div>
-      Hello World
-    </div>
+    <PresenceListPage />
   )
 }
 
-export default Index
+export default HomePage
