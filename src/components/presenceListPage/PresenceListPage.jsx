@@ -5,6 +5,10 @@ import Icon from "../subtitle/Icon";
 import styles from '../subtitle/Icon.module.css'
 import Application from "../application/Application";
 
+import { style } from '@mui/system';
+import { useState } from 'react';
+import { Container } from '@mui/material';
+
 function PresenceListPage () {
   return (
 <>
@@ -22,7 +26,9 @@ function PresenceListPage () {
     </div>
 
     <div>
-      <Application />
+      <Container maxWidth="xs" style={{ marginTop:"40px" }}>
+        <Application />
+      </Container>    
     </div>
 </>
 
