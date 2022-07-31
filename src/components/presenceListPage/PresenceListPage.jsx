@@ -3,6 +3,7 @@ import Title from "../title/Title"
 import Subtitle from "../subtitle/Subtitle";
 import Icon from "../subtitle/Icon";
 import styles from '../subtitle/Icon.module.css'
+import Application from "../application/Application";
 
 function PresenceListPage () {
   return (
@@ -18,6 +19,10 @@ function PresenceListPage () {
 
     <div className={styles.icon}>      
       <Icon iconName="github" link="https://github.com/devbpatriciocosta"/>
+    </div>
+
+    <div>
+      <Application />
     </div>
 </>
 
