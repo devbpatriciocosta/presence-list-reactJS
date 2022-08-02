@@ -8,6 +8,7 @@ import Application from "../application/Application";
 import { style } from '@mui/system';
 import { useState } from 'react';
 import { Container } from '@mui/material';
+import StudentContainer from "../studentContainer/StudentContainer";
 
 function PresenceListPage () {
 
@@ -40,8 +41,10 @@ function PresenceListPage () {
     <div>
       <Container maxWidth="xs" style={{ marginTop:"40px" }}>
 
-        <Application />
-        
+        <Application addStudent={addStudent}/>  
+
+        <StudentContainer />
+
       </Container>    
     </div>
 </>

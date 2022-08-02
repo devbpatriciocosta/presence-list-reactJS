@@ -1,4 +1,5 @@
 import * as React from 'react';
+import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -9,15 +10,14 @@ import CommentIcon from '@mui/icons-material/Comment';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Paper from '@mui/material/Paper';
 
-
-function StudentContainer ({ student, deleteStudent }) {
+function StudentContainer ({ Student, deleteStudent }) {
   return (
     <div>
       <Paper>
         
                 <ListItem
                   secondaryAction={
-                    <IconButton edge="end" aria-label="delete" onClick={() => deleteStudent(student.id)}>
+                    <IconButton edge="end" aria-label="delete" onClick={() => deleteStudent(Student.id)}>
                       <DeleteIcon />
                     </IconButton>
                     }
@@ -31,7 +31,7 @@ function StudentContainer ({ student, deleteStudent }) {
                                 disableRipple   
                           />
                       </ListItemIcon>
-                    <ListItemText primary={student.text} />
+                    <ListItemText primary={Student.text} />
                   </ListItemButton>
                 </ListItem>
         </Paper>
