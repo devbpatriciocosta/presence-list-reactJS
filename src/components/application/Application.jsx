@@ -3,7 +3,7 @@ import { TextField, Button, Paper } from '@mui/material';
 import styles from './Application.module.css';
 
 
-function Application ({ addStudent }) {
+function Application({ addStudent }) {
   const [text, setStudent] = useState(null);
   const [id, setId] = useState(0);
 

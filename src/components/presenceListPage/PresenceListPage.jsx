@@ -10,6 +10,18 @@ import { useState } from 'react';
 import { Container } from '@mui/material';
 
 function PresenceListPage () {
+
+  const [students, setStudent] = useState([]); 
+
+  const addStudent = (Student) => {
+    setStudent([...students, Student])
+  }
+
+  const deleteStudent = (id) => {
+    var filtered = Students.filter((student) => student.id !== id)
+    setStudent(filtered)
+  }
+
   return (
 <>
     <div> 
@@ -27,7 +39,9 @@ function PresenceListPage () {
 
     <div>
       <Container maxWidth="xs" style={{ marginTop:"40px" }}>
+
         <Application />
+        
       </Container>    
     </div>
 </>
